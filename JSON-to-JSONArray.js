@@ -6,7 +6,9 @@ const input = { a: 1, b: 2, c: 3 };
 const keys= Object.keys(input);
 const values = Object.values(input);
 const output = [];
-keys.forEach((a,i)=>{
-    output.push({a: values[i]});
-});
+for(let i = 0; i<keys.length; i++){
+    let obj = {};
+    obj[keys[i]] = values[i];
+    output.push(obj);
+}
 console.log(output);
