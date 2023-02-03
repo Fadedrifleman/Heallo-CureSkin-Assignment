@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/handshake/submissions/code/312561319
 function handshake(n) {
     return n * (n - 1) / 2;
 }
